@@ -170,25 +170,29 @@ def get_video_list(driver):
         })
 
     for video_item in video_items:
-        driver.get(video_item["url"])
+        try:
+            driver.get(video_item["url"])
 
-        WebDriverWait(driver, 9999).until(
-            lambda d: d.find_element(
+            WebDriverWait(driver, 10).until(
+                lambda d: d.find_element(
+                    By.CSS_SELECTOR,
+                    'iframe'
+                )
+            )
+
+            video_embed_url = driver.find_element(
                 By.CSS_SELECTOR,
                 'iframe'
-            )
-        )
+            ).get_attribute("src")
 
-        video_embed_url = driver.find_element(
-            By.CSS_SELECTOR,
-            'iframe'
-        ).get_attribute("src")
-
-        video_list.append({
-            "title": video_item["title"],
-            "url": video_embed_url,
-            "post_url": post_url
-        })
+            video_list.append({
+                "title": video_item["title"],
+                "url": video_embed_url,
+                "post_url": post_url
+            })
+        except Exception as e:
+            print(e)
+            pass
 
     return video_list
 
