@@ -232,3 +232,6 @@ chrome_webdriver
 
 # Patreon credentials
 credentials.json
+
+# Downloaded videos
+downloaded_videos/
