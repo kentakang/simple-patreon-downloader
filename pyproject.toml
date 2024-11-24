@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "simple-patreon-downloader"
+version = "0.0.1"
+description = "Simple video downloader for patreon"
+authors = ["Chan Kang <me@kentakang.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
