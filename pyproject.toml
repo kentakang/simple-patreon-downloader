@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.13"
 selenium = "^4.26.1"
 click = "^8.1.7"
+vimeo-dl = "^1.0"
 
 
 [build-system]

@@ -303,6 +303,16 @@ socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
+name = "vimeo-dl"
+version = "1.0"
+description = "Retrieve Vimeo content and metadata"
+optional = false
+python-versions = "*"
+files = [
+    {file = "vimeo_dl-1.0.zip", hash = "sha256:0fdf42eed1874b9418e728c0ece8a2ca86e714fc8553d7f371998a111fe8a121"},
+]
+
+[[package]]
 name = "websocket-client"
 version = "1.8.0"
 description = "WebSocket client for Python with low level API options"
@@ -335,4 +345,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13"
-content-hash = "65f785be786c57169a6ae499d9630070e42a97db675f20c0d874a6b7c388b4eb"
+content-hash = "8ae63614a0c284e2b2c19041d38a085909891811aec82e6e7c29c29ebf4f4682"
