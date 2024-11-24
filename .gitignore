@@ -229,3 +229,6 @@ pyrightconfig.json
 
 # Chrome WebDriver
 chrome_webdriver
+
+# Patreon credentials
+credentials.json
